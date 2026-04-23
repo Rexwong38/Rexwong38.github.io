@@ -1,14 +1,141 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JSON Mod Manager — Crimson Desert</title>
-  <meta name="description" content="Мод-лоадер для Crimson Desert: установка, обновления, список модов и FAQ." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>JSON Mod Manager для Crimson Desert — скачать, установка, FAQ</title>
+  <meta name="description" content="JSON Mod Manager для Crimson Desert: безопасная установка модов, управление патчами, обновления и подробная инструкция." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="PhorgeForge" />
+  <link rel="canonical" href="https://rexwong38.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JSON Mod Manager" />
+  <meta property="og:title" content="JSON Mod Manager для Crimson Desert" />
+  <meta property="og:description" content="Скачать JSON Mod Manager, установить моды, включать/выключать патчи и быстро восстановить оригинальные файлы." />
+  <meta property="og:url" content="https://rexwong38.github.io/" />
+  <meta property="og:image" content="https://rexwong38.github.io/og-cover.jpg" />
+  <meta property="og:locale" content="ru_RU" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JSON Mod Manager для Crimson Desert" />
+  <meta name="twitter:description" content="Скачать, установка, FAQ и обновления JSON Mod Manager." />
+  <meta name="twitter:image" content="https://rexwong38.github.io/og-cover.jpg" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "JSON Mod Manager",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Windows",
+    "description": "Менеджер модификаций для Crimson Desert с применением JSON-патчей и безопасным восстановлением.",
+    "url": "https://rexwong38.github.io/",
+    "downloadUrl": "https://rexwong38.github.io/#download",
+    "author": {
+      "@type": "Person",
+      "name": "PhorgeForge"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Это официальный сайт игры Crimson Desert?",
+        "acceptedAnswer":{"@type":"Answer","text":"Нет. Это независимый сайт инструмента JSON Mod Manager и он не аффилирован с правообладателями игры."}
+      },
+      {
+        "@type":"Question",
+        "name":"Нужен ли Python для работы JSON Mod Manager?",
+        "acceptedAnswer":{"@type":"Answer","text":"Нет, менеджер распространяется как готовый исполняемый файл для Windows."}
+      },
+      {
+        "@type":"Question",
+        "name":"Можно ли вернуть оригинальные файлы игры?",
+        "acceptedAnswer":{"@type":"Answer","text":"Да, менеджер поддерживает восстановление исходного состояния через резервные копии."}
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <h1>JSON Mod Manager</h1>
-  <p>Официальный сайт мод-лоадера.</p>
-  <p><a href="#">Скачать</a></p>
+  <header class="container">
+    <nav class="top-nav" aria-label="Основная навигация">
+      <a href="#features">Возможности</a>
+      <a href="#install">Установка</a>
+      <a href="#faq">FAQ</a>
+      <a href="#download" class="btn btn-small">Скачать</a>
+    </nav>
+
+    <section class="hero">
+      <p class="badge">Windows • Crimson Desert</p>
+      <h1>JSON Mod Manager</h1>
+      <p class="subtitle">
+        Удобный мод-лоадер с управлением патчами, безопасным применением изменений
+        и быстрым восстановлением оригинальных файлов.
+      </p>
+      <div class="hero-actions" id="download">
+        <a class="btn" href="https://github.com/REPLACE_USERNAME/REPLACE_REPO/releases/latest">Скачать последнюю версию</a>
+        <a class="btn btn-ghost" href="#install">Как установить</a>
+      </div>
+      <p class="note">
+        Важно: сайт не является официальным ресурсом Crimson Desert.
+      </p>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="features">
+      <h2>Ключевые возможности</h2>
+      <ul>
+        <li>Простое включение и отключение модов через GUI</li>
+        <li>Точная настройка отдельных JSON-патчей</li>
+        <li>Резервные копии перед изменениями</li>
+        <li>Быстрое восстановление исходного состояния</li>
+        <li>Чистая структура для обновлений и поддержки</li>
+      </ul>
+    </section>
+
+    <section id="install">
+      <h2>Установка</h2>
+      <ol>
+        <li>Скачай архив с последней версией.</li>
+        <li>Распакуй в любую папку на диске.</li>
+        <li>Запусти <code>mod_manager.exe</code>.</li>
+        <li>Укажи путь к папке игры (если не определился автоматически).</li>
+        <li>Выбери моды, активируй и нажми применить.</li>
+      </ol>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <h3>Это официальный сайт игры?</h3>
+      <p>Нет. Это сайт независимого инструмента JSON Mod Manager.</p>
+
+      <h3>Менеджер безопасен для файлов игры?</h3>
+      <p>Да, используется резервное копирование и возможность отката.</p>
+
+      <h3>Где смотреть обновления?</h3>
+      <p>В разделе релизов GitHub и changelog проекта.</p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> JSON Mod Manager</p>
+    <p>Crimson Desert и связанные товарные знаки принадлежат их владельцам.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
